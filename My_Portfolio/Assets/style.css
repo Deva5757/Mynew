@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    font-size: 18px;
+}
+:root{
+    --foot-color:#453d6938;
+    --back-color:#FFD966;
+    --primary-color:#6DD0F2;
+    --secondary-color:#F59ABE;
+    --text-color:#557fda;
+}
+
+header{
+    background: linear-gradient(to right, #FED1E9, #e083f7, #edecee, #f394c4);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+.d_log{
+    width: 50%;
+}
+.d_log img{
+    width: 10%;
+}
+.nav-list{
+    width: 50%;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+.nav-list ul li{
+    margin-left: 2em;
+    font-size: 1.5rem;
+    color: #557fda;
+}
+.nav-list ul li:hover{
+    border-bottom: 0.1em greenyellow solid;
+    border-radius: 30%;
+    transition: 0.5s linear;
+}
+.home{
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+.home_page{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding-left: 6em; */
+    
+}
+.intro{
+    width: 50%;
+    padding-left: 3em;
+    /* border: 2px solid red; */
+    font-size: 3rem;
+    color: var(--foot-color);
+
+}
+.home_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.home_img img{
+    width: 50%;
+    border-radius: 50%;
+}
+.intro h2 span{
+    color: white;
+}
+
+/* about */
+.about{
+    margin-top: 2em;
+    width: 100%;
+}
+.about .obj{
+    width: 80%;
+    margin: auto;
+    color: var(--text-color);
+    text-align: center;
+    border-bottom: 1px solid var(--primary-color)
+}
+.about .obj h3{
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+}
+.about .obj p{
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+.detalis{
+    margin: 2em auto;
+    width: 80%;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--primary-color)
+}
+.detalis h3{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.detalis table{
+    margin-top: 0.5em;
+    width: 100%;
+    border: 2px solid rgb(245, 245, 245);
+    background-color: rgb(241, 240, 240);
+    margin-bottom: 0.5em;
+}
+.detalis table th{
+    border: 2px solid sandybrown;
+    font-size: 1.3rem;
+    background-color: #F59ABE;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1em;
+}
+.detalis table td{
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 1.3rem;
+    padding: 1em;
+}
+
+.hobbies{
+    margin: 2em auto;
+    width: 80%;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--primary-color)
+}
+.hobbies h3{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.hobbies ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+.hobbies ul li{
+    display: flex;
+    font-size: 1.5rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.hobbies ul li img{
+    width: 10%;
+}
+.lk{
+    margin: 2em auto;
+    width: 80%;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--primary-color)
+}
+.lk h3{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.lk ul{
+    list-style: none;
+    margin-bottom: 0.5em;
+}
+.lk ul li{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.lk ul li img{
+    width: 5%;
+}
+.traits{
+    margin: 2em auto;
+    width: 80%;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--primary-color)
+}
+.traits h3{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.traits ul{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.traits ul li{
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/* skills */
+.skills{
+    width: 100%;
+}
+.basic_skill{
+    margin: 2em auto;
+    width: 80%;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--primary-color)
+}
+.basic_skill ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basic_skill ul li{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+.basic_skill ul li img{
+    width: 5%;
+}
+#re{
+    width: 20%;
+}
+.t_skills{
+    width: 100%;
+}
+.t_skills h1{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card img{
+    width: 30%;
+}
+.t_skills .cards .card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--secondary-color);
+    border-radius: 2%;
+    margin-left: 1%;
+}
+#big{
+    width: 55%;
+    border-bottom: 2px solid gray;
+    margin-bottom: 1%;
+}
+#big_1{
+    width: 30%;
+    border-bottom: 2px solid gray;
+    margin-bottom: 1%;
+}
+#big_2{
+    width: 30%;
+    border-bottom: 3px solid gray;
+    margin-bottom: 1%;
+}
+.card p{
+    color: rgb(254, 255, 253);
+}
+.card{
+    background: linear-gradient(black, white, silver);
+}
+.card h2{
+    background: linear-gradient(rgb(18, 34, 250), white);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+/* .contact .icon{
+
+} */
+.contact{
+    display: flex;
+}
+.contact .icon{
+    width: 20%;
+    height: 10%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact .icon img{
+   width: 30%; 
+   padding: 2%;
+   position: relative;
+}
+.contact .icon .ol{
+    width: 100px;
+    height: 100px;
+    background-color: #00eb1f63;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s linear;
+}
+.contact .icon .ol:hover{
+    opacity: 1;
+}
+.contact h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.con{
+    width: 100%;
+    margin-top: 30px;
+}
+.con h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    animation: light 1s infinite linear;
+    transition: 0.5s linear;
+}
+@keyframes light{
+    0%{
+        text-shadow: 0px 0px 0px;
+    }
+    100%{
+        text-shadow: 3px 3px 10px rgb(217, 255, 0),3px 4px 11px rgb(217, 255, 0),4px 3px 12px rgb(217, 255, 0);
+    }
+}
+
+footer{
+    margin-top: 30px;
+    color: white;
+    background-color: gray;
+}
+footer h3{
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width:760px) {
+    .nav-list ul li{
+        font-size: 0.7rem;
+    }
+    .intro{
+        font-size: 1rem;
+    }
+    .about .obj h3{
+        font-size: 1.5rem;
+    }
+    .about .obj p{
+        font-size: 1rem;
+        line-height: 1.3em;
+    }
+    .detalis h3{
+        font-size: 1.5rem;
+    }
+    .detalis table{
+        margin-top: 0.5em;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 0.5em;
+    }
+    .detalis table th{
+        font-size: 1rem;
+        padding: 0.5em;
+    }
+    .detalis table td{
+        font-size: 0.7rem;
+        padding: 0.5em;
+    }
+    .hobbies{
+        margin: 2em auto;
+        width: 100%;
+    }
+    .hobbies h3{
+        font-size: 1.5rem;
+    }
+    .ul{
+        margin: auto;
+    }
+    .hobbies ul li{
+    display: flex;
+    font-size: 0.5rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    }
+    .lk h3{
+    font-size: 1.5rem;
+}
+.lk ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+.lk ul li{
+    display: flex;
+    font-size: 1rem;
+}
+.traits h3{
+    font-size: 1.5rem;
+}
+.traits ul li{
+    font-size: 1rem;
+}
+.basic_skill ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.basic_skill ul li img{
+    display: none;
+}
+.basic_skill ul li{
+    font-size: 0.7rem;
+}
+.t_skills h1{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact{
+    display: flex;
+}
+.contact .icon .ol{
+    width: 50px;
+    height: 50px;
+    background-color: #00eb1f63;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s linear;
+}
+}
+@media screen and (max-width:416px) {
+  .detalis table th{
+        font-size: 0.7rem;
+        padding: 0.5em;
+    }
+    .detalis table td{
+        font-size: 0.5rem;
+        padding: 0.3em;
+    }   
+    .con h1{
+        font-size: 1.5rem;
+    }
+}
